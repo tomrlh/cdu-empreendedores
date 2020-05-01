@@ -1,7 +1,8 @@
 import React from 'react'
-import {Icon} from 'semantic-ui-react'
+import {Icon, Segment} from 'semantic-ui-react'
 import {Subscribe} from 'unstated'
 import EmpreendedoresContainer from '../containers/EmpreendedoresContainer'
+import DetalhesModal from '../DetalhesModal'
 import CardList from '../CardList'
 
 class Empreendedores extends React.Component {
@@ -39,16 +40,19 @@ class Empreendedores extends React.Component {
                     <div className="projects-holder-3">
                       <div className="projects-holder">
                         <div className="row">
-                          {empreendedores.state.categorias.map((categoriaNome, index) => {
-                            return <CardList key={index} categoria={categoriaNome}/>
-                          })}
+                          <Segment style={{overflow: 'auto', maxHeight: 650, height: 650 }}>
+                            {empreendedores.state.categorias.map((categoriaNome, index) => {
+                              return <CardList key={index} categoria={categoriaNome}/>
+                            })}
+                          </Segment>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
+            <DetalhesModal mostrar={empreendedores.state.mostrarDetalhesModal}/>
           </section>
         )}
       </Subscribe>

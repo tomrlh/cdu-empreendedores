@@ -14,9 +14,7 @@ class CardList extends React.Component {
               .map((empreendedor, index) => {
                 return <EmpreendedorCard 
                 key={index+empreendedor.nome}
-                nome={empreendedor.nome}
-                descricao={empreendedor.descricao}
-                imagem={empreendedor.imagem}
+                empreendedor={empreendedor}
               />
             })}
           </div>
