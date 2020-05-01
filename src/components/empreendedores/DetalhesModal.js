@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
 import {Subscribe} from 'unstated'
-import EmpreendedoresContainer from './containers/EmpreendedoresContainer'
+import EmpreendedoresContainer from '../containers/EmpreendedoresContainer'
+import ImagensCarousel from './ImagensCarousel'
 
 class DetalhesModal extends Component {
   state = { open: false }
@@ -15,28 +16,30 @@ class DetalhesModal extends Component {
     return (
       <Subscribe to={[EmpreendedoresContainer]}>
         {empreendedores => (
-          <Modal dimmer={true} open={this.props.mostrar} onClose={this.close}
-            style={{marginTop: '85px'}} closeIcon>
+          <Modal dimmer={true} open={empreendedores.state.mostrarDetalhesModal} onClose={this.close}>
             <Modal.Content image scrolling>
-              <Image size='medium' bordered src={empreendedores.state.empreendedorSelecionado.imagem} wrapped />
-
+              <Image
+                wrapped
+                size='medium'
+                src={empreendedores.state.empreendedorSelecionado.imagem}
+              />
               <Modal.Description>
                 <Header>{empreendedores.state.empreendedorSelecionado.nome}</Header>
                 <p>
-                  {empreendedores.state.empreendedorSelecionado.detalhes}
+                {empreendedores.state.empreendedorSelecionado.detalhes}
                 </p>
+                <ImagensCarousel/>
               </Modal.Description>
             </Modal.Content>
             <Modal.Actions>
-              <Button onClick={this.close} negative>
-                No
+              <Button basic color='black' icon onClick={() => {empreendedores.setMostrarDetalhesModal(false); this.close()}}>
+                <Icon name='close'/> Fechar
               </Button>
               <Button
-                onClick={this.close}
                 positive
-                labelPosition='right'
-                icon='checkmark'
-                content='Yes'
+                icon='whatsapp'
+                content="Abrir chat"
+                onClick={() => window.open("https://wa.me/"+empreendedores.state.empreendedorSelecionado.contato, "_blank")}
               />
             </Modal.Actions>
           </Modal>
