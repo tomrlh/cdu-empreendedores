@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cdu-empreendedores/static/css/main.60f9e1d7.chunk.css",
+    "main.js": "/cdu-empreendedores/static/js/main.ec9de0ce.chunk.js",
+    "main.js.map": "/cdu-empreendedores/static/js/main.ec9de0ce.chunk.js.map",
+    "runtime-main.js": "/cdu-empreendedores/static/js/runtime-main.aae46bae.js",
+    "runtime-main.js.map": "/cdu-empreendedores/static/js/runtime-main.aae46bae.js.map",
+    "static/css/2.3725fdef.chunk.css": "/cdu-empreendedores/static/css/2.3725fdef.chunk.css",
+    "static/js/2.60246370.chunk.js": "/cdu-empreendedores/static/js/2.60246370.chunk.js",
+    "static/js/2.60246370.chunk.js.map": "/cdu-empreendedores/static/js/2.60246370.chunk.js.map",
+    "index.html": "/cdu-empreendedores/index.html",
+    "precache-manifest.94aa49c8b1fad008108491dc1c010c34.js": "/cdu-empreendedores/precache-manifest.94aa49c8b1fad008108491dc1c010c34.js",
+    "service-worker.js": "/cdu-empreendedores/service-worker.js",
+    "static/css/2.3725fdef.chunk.css.map": "/cdu-empreendedores/static/css/2.3725fdef.chunk.css.map",
+    "static/css/main.60f9e1d7.chunk.css.map": "/cdu-empreendedores/static/css/main.60f9e1d7.chunk.css.map",
+    "static/js/2.60246370.chunk.js.LICENSE.txt": "/cdu-empreendedores/static/js/2.60246370.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/cdu-empreendedores/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/logo.svg": "/cdu-empreendedores/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aae46bae.js",
+    "static/css/2.3725fdef.chunk.css",
+    "static/js/2.60246370.chunk.js",
+    "static/css/main.60f9e1d7.chunk.css",
+    "static/js/main.ec9de0ce.chunk.js"
+  ]
+}
